@@ -1,0 +1,65 @@
+.tabs--inline-block {
+  @include tabs-container;
+  display: inline-block;
+  border: 1px solid #545454;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.weps__tabs > li:focus {
+  outline: 0;
+}
+
+.weps__tabs > li > a {
+  padding: 0.55rem 0.8rem;
+  color: #545454;
+  border-right: 1px solid #545454;
+}
+
+.weps__tabs > li:first-child > a {
+  border-left: none;
+}
+
+.weps__tabs > li:last-child > a {
+  border-right: none;
+}
+
+.weps__tabs .tabs-title > a:focus,.weps__tabs .tabs-title > a[aria-selected='true'] {
+  color: #cc7a1f;
+  background: none;
+  font-weight: 600;
+}
+
+.weps__tabs .tabs-title > a:hover {
+    background: #fefefe;
+    color: #cc7a1f;
+}
+
+.product__tile--orbit .orbit-next, .product__tile--orbit .orbit-previous {
+  color: #545454;
+  padding: 0.6rem 1rem;
+  border: 1px solid #545454;
+  font-size: .8em;
+  bottom: 0;
+  position: inherit;
+}
+
+.product__tile--orbit .orbit-next:focus, .product__tile--orbit .orbit-previous:focus, {
+  background: none;
+}
+.product__tile--orbit .orbit-next:hover, .product__tile--orbit .orbit-previous:hover,
+.product__tile--orbit .orbit-next:visited, .product__tile--orbit .orbit-previous:visited, {
+  background: none;
+  color: #cc7a1f;
+  cursor: pointer;
+}
+
+.product__tile--orbit .orbit-previous {
+  top: inherit;
+  left: inherit;
+}
+
+.product__tile--orbit .orbit-next {
+  top: inherit;
+  right: inherit;
+}

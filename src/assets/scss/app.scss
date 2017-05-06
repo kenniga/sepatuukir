@@ -50,3 +50,7 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+// @import custom scss
+@import 'components/elements.scss';
+@import 'components/modifiers.scss';
