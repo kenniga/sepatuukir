@@ -187,3 +187,47 @@ hr.divider {
     }
   }
 }
+
+.shop--sidebar {
+  .header {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .accordion-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1em 0;
+    border: none;
+    font-size: 1em;
+    color: #0a0a0a;
+  }
+  .accordion-content {
+    padding: 0;
+    border: none;
+  }
+  .slider {
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    background-color: transparent;
+    border-radius: 20px;
+  }
+  .slider-fill {
+    background-color: transparent;
+  }
+  .slider-handle {
+    background-color: black;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+  }
+  .accordion-title:hover, .accordion-title:focus {
+    background: transparent;
+  }
+}
+
+.products--list {
+  .products--showed {
+    color: #656565;
+    margin-left: 1em;
+    font-size: 0.8em;
+  }
+}
