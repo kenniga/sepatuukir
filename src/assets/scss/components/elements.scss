@@ -1,3 +1,23 @@
+.top-bar, .top-bar ul {
+    background: #fff;
+}
+.top-bar {
+  box-shadow: 1px 0px 10px grey;
+}
+
+.search-item {
+  position: relative;
+}
+
+.search-item > a{
+  display: inline-block;
+  position: absolute;
+  top: 0.3em;
+  right: 1em;
+  font-size: 1.4em;
+  padding: 0 !important;
+}
+
 .weps__tabs > li > a {
   padding: 0.55rem 0.8rem
 }
@@ -11,6 +31,10 @@
   text-align: center;
 }
 
+.logo--top {
+  padding: 1em 0;
+}
+
 .product__tile img {
   opacity: 1;
   display: block;
@@ -21,8 +45,24 @@
   margin: 0 auto;
 }
 
-.product__tile--orbit ul.orbit-container {
+ul.orbit-container {
     height: auto !important;
+    &.main--orbit {
+      padding-top: 2em;
+      background: #020204;
+      li {
+        text-align: center;
+      }
+      .orbit-bullets button {
+        background-color: transparent;
+        border: 1px solid white;
+        width: 0.7rem;
+        height: 0.7rem;
+      }
+      .orbit-bullets button.is-active {
+        background-color: white;
+      }
+    }
 }
 .product__tile--orbitli.orbit-slide {
     max-height: none !important;
@@ -67,4 +107,83 @@
 
 .product__tile:hover .tile__content {
   opacity: 1;
+}
+
+.features {
+  margin: 2em auto;
+}
+
+.features .columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.features .feature--content {
+  margin-left: 1em;
+}
+
+.featured--detail {
+  margin-left: -11em;
+  padding: 3em 0;
+}
+
+.featured--product-name {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.featured--product-sub-headline {
+  font-size: 1.5em;
+}
+
+.featured--product-description {
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+.flex {
+  display: flex;
+}
+.align.center {
+  align-items: center;
+}
+
+hr.divider {
+  margin-top: 1em;
+  margin-bottom: 2.5em;
+}
+
+.footer.callout {
+  color: #F1F1F1;
+  font-size: 0.8em;
+  margin-bottom: 0;
+  .menu > li > a {
+    padding: 0.5rem 0;
+  }
+  .menu > li > a:link,
+  .menu > li > a:visited {
+    color: #898989;
+  }
+  .header {
+    color: #F7F7F7;
+    font-weight: 700;
+    display: block;
+    padding: 0.5em 0;
+  }
+  .content {
+    margin-top: 1em;
+  }
+  .social--rows {
+    margin-top: 2em;
+    a {
+      font-size: 2em;
+      padding: 0 .5em;
+    }
+    a:link,
+    a:visited {
+      color: #F7F7F7
+
+    }
+  }
 }
