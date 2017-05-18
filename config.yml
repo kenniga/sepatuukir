@@ -28,6 +28,7 @@ PATHS:
     - "bower_components/foundation-sites/scss"
     - "bower_components/motion-ui/src"
     - "bower_components/foundation-icon-fonts"
+    - "node_modules/flickity/css/"
   # Paths to JavaScript libraries, which are combined into one file
   javascript:
     # Libraries required by Foundation
@@ -58,6 +59,8 @@ PATHS:
     - "bower_components/foundation-sites/js/foundation.toggler.js"
     - "bower_components/foundation-sites/js/foundation.tooltip.js"
     - "bower_components/foundation-sites/js/foundation.zf.responsiveAccordionTabs.js"
+    # Flickity JS Plugin
+    - "node_modules/flickity/dist/flickity.pkgd.js"
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"
